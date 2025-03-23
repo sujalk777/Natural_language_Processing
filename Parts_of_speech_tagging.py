@@ -28,7 +28,6 @@ sentences=nltk.sent_tokenize(paragraph)
 sentences
 nltk.download('averaged_perceptron_tagger')
 ## We will find the Pos Tag
-
 for i in range(len(sentences)):
     words=nltk.word_tokenize(sentences[i])
     words=[word for word in words if word not in set(stopwords.words('english'))]
